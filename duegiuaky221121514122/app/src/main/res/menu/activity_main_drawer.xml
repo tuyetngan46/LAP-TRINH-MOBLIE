@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_content"
+            android:icon="@drawable/baseline_content_paste_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_day1_layout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_day1_linearlayout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_day2_activity_login"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow1" />
+        <item
+            android:id="@+id/nav_day2_listview"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow2" />
+        <item
+            android:id="@+id/nav_day2_listview_advanced"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow3" />
+        <item
+            android:id="@+id/nav_day3_Network_basic"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow4" />
+
+        <item
+            android:id="@+id/nav_day3_Network_RecyclerView"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow5" />
+        <item
+            android:id="@+id/nav_day3_Network_Weather"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow6" />
+    </group>
+</menu>

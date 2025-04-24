@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">>
+
+
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/anh"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgAvatar"
+            android:layout_marginStart="10dp"
+            android:text="Byrdie"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserName"
+            android:layout_toEndOf="@id/imgAvatar"
+            android:layout_marginStart="10dp"
+            android:text="10 phút trước"
+            android:textColor="@android:color/darker_gray"/>
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTime"
+            android:layout_marginTop="8dp"
+            android:text="Hôm nay trời đẹp quá. Tôi muốn đưa vợ đi chơi"/>
+    </RelativeLayout>
+
+
+    <!-- Body -->
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imgBody"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img_1"
+            android:layout_margin="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgBody"
+            android:layout_margin="10dp"
+            android:text="Đang đi chơi thì trời đổ mưa"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+
+        <TextView
+            android:id="@+id/tvUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvContent"
+            android:layout_margin="10dp"
+            android:text="dantri.com.vn"
+            android:textColor="@android:color/holo_blue_dark"/>
+    </RelativeLayout>
+
+
+    <!-- Đường kẻ phân cách -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginHorizontal="10dp"/>
+
+
+    <!-- Footer chứa các nút -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/btnLike"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Like"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:id="@+id/btnComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Comment"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:id="@+id/btnShare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Share"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!-- Đường kẻ cuối cùng -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+
+
+
+
+</LinearLayout>
